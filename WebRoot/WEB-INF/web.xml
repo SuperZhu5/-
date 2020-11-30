@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReSetPasswordServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.ReSetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowImgServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.ShowImgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SortBookServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.SortBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.AddGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BuyGoodsServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.BuyGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelBuyGoodsServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.DelBuyGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SumServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.SumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAdressServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.AddAdressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetAllAddressServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.GetAllAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelAddressServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.DelAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UseAddressServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.UseAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetAllGoodsServlet</servlet-name>
+    <servlet-class>com.gem.book_mall.servlet.GetAllGoodsServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<filter>
+		<filter-name>CharacterEncoding</filter-name>
+		<filter-class>com.gem.book_mall.filter.CharacterEncodeFilter</filter-class>
+		<init-param>
+		<param-name>encode</param-name>
+		<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignUpServlet</servlet-name>
+    <url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReSetPasswordServlet</servlet-name>
+    <url-pattern>/ReSetPasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowImgServlet</servlet-name>
+    <url-pattern>/ShowImgServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SortBookServlet</servlet-name>
+    <url-pattern>/SortBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <url-pattern>/AddGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyGoodsServlet</servlet-name>
+    <url-pattern>/BuyGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelBuyGoodsServlet</servlet-name>
+    <url-pattern>/DelBuyGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SumServlet</servlet-name>
+    <url-pattern>/SumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAdressServlet</servlet-name>
+    <url-pattern>/AddAdressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllAddressServlet</servlet-name>
+    <url-pattern>/GetAllAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelAddressServlet</servlet-name>
+    <url-pattern>/DelAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UseAddressServlet</servlet-name>
+    <url-pattern>/UseAddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllGoodsServlet</servlet-name>
+    <url-pattern>/GetAllGoodsServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
